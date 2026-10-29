@@ -1,0 +1,1 @@
+Optional data folder. Add health_data.csv with columns: age_group,condition,risk_level,cases,region. If absent, illustrative demo data is used.\n

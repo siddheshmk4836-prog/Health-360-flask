@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{% block title %}Overview{% endblock %} | Health360</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script></head><body>
+<div class="shell"><aside class="sidebar"><a class="brand" href="/"> <span class="mark">✣</span><span>health<span>360</span><small>HEALTH INTELLIGENCE</small></span></a>
+<div class="navlabel">WORKSPACE</div><nav>
+<a class="{% if request.endpoint == 'dashboard' %}active{% endif %}" href="/">▦ &nbsp; Overview</a>
+<a class="{% if request.endpoint == 'story' %}active{% endif %}" href="/story">◷ &nbsp; Analytics story</a>
+<a class="{% if request.endpoint == 'tableau' %}active{% endif %}" href="/tableau">↗ &nbsp; Tableau original</a></nav>
+<div class="sidefoot"><i></i><span><b>Analytics workspace</b><small>Demo data loaded</small></span></div></aside>
+<main><header><span>Health intelligence <b>/</b> {% block crumb %}Overview{% endblock %}</span><span class="online">● SYSTEM ONLINE</span></header>
+{% block body %}{% endblock %}
+<footer>Health360 · Healthcare risk & disease analytics <span>For demonstration and educational use</span></footer></main></div>
+{% block scripts %}{% endblock %}</body></html>

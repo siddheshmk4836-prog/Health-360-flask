@@ -1,0 +1,17 @@
+{% extends "base.html" %}{% block title %}Overview{% endblock %}{% block crumb %}Overview{% endblock %}
+{% block body %}
+<section class="heading"><div><div class="eyebrow">— HEALTHCARE ANALYTICS</div><h1>Health at a glance<span>.</span></h1><p>Explore disease patterns, patient risk levels, and population trends in one place.</p></div><a class="btn dark" href="/story">Explore the story →</a></section>
+<div class="notice"><b>ⓘ &nbsp; Prototype dashboard</b><span>Charts use illustrative demo data. Replace it with your project dataset before presenting findings.</span></div>
+<section class="filters"><b>☷ &nbsp; FILTER DATA</b><label>Condition <select id="condition"><option>All</option><option>Diabetes</option><option>Cardiovascular</option><option>Respiratory</option><option>Hypertension</option></select></label><label>Region <select id="region"><option>All</option><option>Central</option><option>North</option><option>South</option><option>West</option></select></label><label>Risk level <select id="risk_level"><option>All</option><option>Low</option><option>Medium</option><option>High</option></select></label><button id="reset">Reset ↺</button></section>
+<section class="kpis">
+<article><label>Total recorded cases</label><strong id="total">—</strong><small>Across current filters</small></article>
+<article><label>Conditions tracked</label><strong id="count">—</strong><small>Distinct condition categories</small></article>
+<article><label>High-risk cases</label><strong id="high">—</strong><small>Classified as high risk</small></article>
+<article><label>Leading condition</label><strong class="leading" id="leading">—</strong><small>By recorded case count</small></article>
+</section>
+<section class="charts"><article class="panel wide"><h2>Disease distribution</h2><p>Recorded cases by condition</p><div id="conditionChart" class="chart"></div></article>
+<article class="panel"><h2>Risk composition</h2><p>Case count by risk level</p><div id="riskChart" class="chart"></div></article>
+<article class="panel"><h2>Age group comparison</h2><p>Distribution across age segments</p><div id="ageChart" class="chart"></div></article>
+<article class="panel wide"><h2>Condition × risk matrix</h2><p>Compare case volume by condition and risk classification</p><div id="matrixChart" class="chart"></div></article></section>
+<article class="panel insight"><b>✦ &nbsp; How to read this dashboard</b><p>Use the filters to explore sample data, compare condition totals, inspect risk composition, and see which age groups contribute most to the displayed volume. These are demonstration values, not clinical statistics.</p><a href="/story">View analysis notes →</a></article>
+{% endblock %}{% block scripts %}<script src="{{ url_for('static',filename='dashboard.js') }}"></script>{% endblock %}
