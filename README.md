@@ -26,3 +26,6 @@ Example row:
 **Important:** The built-in data is illustrative only and must not be presented as real clinical findings. Replace it with the dataset behind your Tableau project. Adjust filter options in `templates/dashboard.html` if your actual categories differ.
 
 The charts load Plotly.js from a CDN and need internet access. Tableau embedding may be restricted by the source view; direct links are also provided.
+
+## Tableau Public dashboard
+[Health360 Comprehensive Healthcare Risk & Disease Analytics](https://public.tableau.com/views/Health360_ComprehensiveHealthcareRiskDiseaseAnalytics/SmartHealthcareAnalyticsPatientRiskLifestyleInsights?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
