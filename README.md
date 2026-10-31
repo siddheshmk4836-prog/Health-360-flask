@@ -28,4 +28,4 @@ Example row:
 The charts load Plotly.js from a CDN and need internet access. Tableau embedding may be restricted by the source view; direct links are also provided.
 
 ## Tableau Public dashboard
-[Health360 Comprehensive Healthcare Risk & Disease Analytics](https://public.tableau.com/views/Health360_ComprehensiveHealthcareRiskDiseaseAnalytics/SmartHealthcareAnalyticsPatientRiskLifestyleInsights?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[Health360 Comprehensive Healthcare Risk & Disease Analytics](https://public.tableau.com/views/Health360_ComprehensiveHealthcareRiskDiseaseAnalytics/SmartHealthcareAnalyticsPatientRiskLifestyleInsights?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
